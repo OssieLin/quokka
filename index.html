@@ -7,11 +7,16 @@
     <style>
         body {
             text-align: center;
-            font-family: 'Courier New', Courier, monospace;
-            margin-top: 500px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            margin: 0 auto;
+            width: 60%;
+            font-family: "Courier New", Courier, monospace;
+            background-color: burlywood;
+            color: white;
+        }
+        h1 {
+            font-size: 20px; /* Font size based on the viewport width */
+            margin-bottom: 10px;
+            text-align: center;
         }
         #yes {
             font-size: 16px;
@@ -26,17 +31,25 @@
             background-color: lightgray;
             font-family: 'Courier New', Courier, monospace;
             border: none;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
+        img {
+            max-width: 80%;
+            height: auto;
+        }
+        @media (max-width: 480px) {
+            body {
+                width: 100%;
+                padding:10px; /* Remove padding completely for mobile */
+            }
+        }
+        
     </style>
 </head>
 <body>
-    <h1>Will you be my Valentine? 💖</h1>
-    <button id="yes" onclick="alert('Yay! 💕')">Yes</button>
+    <h1>Will you be my Valentine? 😆</h1>
+    <button id="yes" onclick="alert('Yay! 🙌🏻')">Yes</button>
     <button id="no" onclick="makeYesBigger()">No</button>
+    <img src="quokka.gif" alt="Quokka GIF">
 
     <script>
         let yesButton = document.getElementById('yes');
