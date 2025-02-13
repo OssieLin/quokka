@@ -4,61 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello Ceci!!!</title>
-    <style>
-        body {
-            text-align: center;
-            margin: 0 auto;
-            width: 60%;
-            font-family: "Courier New", Courier, monospace;
-            background-color: burlywood;
-            color: white;
-        }
-        h1 {
-            font-size: 30px; /* Font size based on the viewport width */
-            margin-bottom: 10px;
-            text-align: center;
-        }
-        #yes {
-            font-size: 16px;
-            padding: 10px 20px;
-            background-color: pink;
-            font-family: 'Courier New', Courier, monospace;
-            border: none;
-        }
-        #no {
-            font-size: 16px;
-            padding: 10px 20px;
-            background-color: lightgray;
-            font-family: 'Courier New', Courier, monospace;
-            border: none;
-        }
-        img {
-            max-width: 80%;
-            height: auto;
-        }
-        @media (max-width: 480px) {
-            body {
-                width: 100%;
-                padding:10px; /* Remove padding completely for mobile */
-            }
-            h1 {
-               font-size: 23px; 
-            }
-        }
-        
-    </style>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
 </head>
 <body>
+    <h1>Hello Cecilia 👋🏻</h1>
     <h1>Will you be my Valentine? 😆</h1>
     <button id="yes" onclick="alert('Yay! 🙌🏻')">Yes</button>
     <button id="no" onclick="makeYesBigger()">No</button>
     <img src="quokka.gif" alt="Quokka GIF">
-
-    <script>
-        let yesButton = document.getElementById('yes');
-        function makeYesBigger() {
-            let currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
-            yesButton.style.fontSize = (currentSize + 5) + 'px';
-        }
-    </script>
+    <button id="surprise" onclick="surpriseMe()">To Ceci......</button>
+    
+    <script src="script.js"></script> <!-- Link to external JavaScript -->
 </body>
+</html>

@@ -1,0 +1,72 @@
+body {
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+    font-family: "Courier New", Courier, monospace;
+    background-color: burlywood;
+    color: white;
+}
+
+h1 {
+    font-size: 30px; /* Font size based on the viewport width */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#yes {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: pink;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+}
+
+#no {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: lightgray;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+}
+
+#yes, #no {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#yes:hover, #no:hover {
+    transform: scale(1.1); /* Make button slightly larger on hover */
+    background-color: #ff7f7f; /* Change color on hover */
+}
+
+#surprise {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: lightskyblue;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+}
+
+#goBack {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: lightskyblue;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+}
+
+
+img {
+    max-width: 90%;
+    height: auto;
+}
+
+@media (max-width: 480px) {
+    body {
+        width: 100%;
+        padding: 10px; /* Remove padding completely for mobile */
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+}
