@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        #yes {
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: pink;
+            font-family: 'Courier New', Courier, monospace;
+            border: none;
+            cursor: pointer;
+        }
+        #no {
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: lightgray;
+            font-family: 'Courier New', Courier, monospace;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Will you be my Valentine? 💖</h1>
+    <button id="yes" onclick="alert('Yay! 💕')">Yes</button>
+    <button id="no" onclick="makeYesBigger()">No</button>
+
+    <script>
+        let yesButton = document.getElementById('yes');
+        function makeYesBigger() {
+            let currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
+            yesButton.style.fontSize = (currentSize + 5) + 'px';
+        }
+    </script>
+</body>
